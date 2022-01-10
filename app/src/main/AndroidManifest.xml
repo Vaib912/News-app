@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.us.newsapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/news"
+        android:label="News Cloud"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewsApp">
+        <activity android:name=".businessNews"></activity>
+        <activity android:name=".sportsNews" />
+        <activity android:name=".techNews" />
+
+        <activity
+            android:name=".Indian_News"
+            android:label="News Cloud" />
+        <activity android:name=".openingScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".categories" />
+    </application>
+
+</manifest>
